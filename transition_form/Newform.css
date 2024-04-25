@@ -1,0 +1,123 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+#parent-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width:600px;
+    margin-left:34%;
+    margin-top: 60px;
+    perspective: 1000px; 
+    background-color: white;
+    border-radius:50px 0px 50px 0px ;
+}
+.data-container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.form-container,
+.table-container {
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+.form-container{
+  z-index: 2;
+}
+.table-container{
+  transform: rotateY(180deg);
+}
+#myform{
+  display:flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+input {
+    height: 30px;
+    width:150px;
+    margin:7px;
+    border-radius: 5px;
+    border: 3px solid blueviolet;
+    text-align: center;
+    color: blueviolet;
+}
+select{
+    height: 30px;
+    width:100px;
+    border-radius: 10px;
+    border: 3px solid blueviolet;
+    text-align: center;
+    margin: 7px;
+
+}
+#submit{
+    height: 30px;
+    width:100px;
+    border: 7px solid blueviolet;
+    color: blueviolet;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.table {
+  height: 400px;
+  width:590px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-left: 5px;
+  margin-top: 5px;
+  border-radius: 20px 0px 20px 0px;
+ 
+}
+
+.table,
+.table th,
+.table td {
+  border: 3px solid 
+}
+
+.table th,
+.table td {
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.table tr:nth-child(odd) {
+  background-color: blueviolet
+}
+
+.table tr:nth-child(even) {
+  background-color: blueviolet;
+}
+.table th {
+  background-color: blueviolet;
+  color: white;
+}
+
+.table-header {
+  background-color: #333;
+  color: white;
+  border: 5px solid black;
+}
+
+.table-header th {
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+
+
+      
